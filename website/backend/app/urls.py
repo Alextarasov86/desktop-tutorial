@@ -1,3 +1,4 @@
 from garpixcms.urls import *  # noqa
 
-urlpatterns = [] + urlpatterns  # noqa
+urlpatterns = [path('api/', include('review.urls')),
+               path('api/', include('blog.urls'))] + urlpatterns  # noqa

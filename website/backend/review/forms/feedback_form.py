@@ -1,7 +1,7 @@
 from django.forms import ModelForm
-from ..models import FeedbackPage
+from ..models import ReviewPage
 
 class FeedbackForm(ModelForm):
     class Meta:
-        model = FeedbackPage
+        model = ReviewPage
         fields = ['email', 'comment']

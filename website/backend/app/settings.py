@@ -2,8 +2,8 @@ from garpixcms.settings import *  # noqa
 
 INSTALLED_APPS += [
     'blog',
-    'global_settings',
-    'feedback'
+    'review',
+    'global_settings'
 
 ]
 

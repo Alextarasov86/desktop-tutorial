@@ -1,5 +1,5 @@
+from .models import *
 from rest_framework import serializers
-from .models import PostPage, Tag
 
 
 class TagSerializer(serializers.ModelSerializer):
@@ -12,4 +12,9 @@ class BlogPageSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = PostPage
-        fields = "__all__"
+        fields = '__all__'
+
+class BlogTitleSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = PostPage
+        fields = ('title', )
